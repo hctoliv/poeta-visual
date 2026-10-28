@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O Poeta Visual · Castelos &amp; Ruínas</title>
+<meta name="description" content="O Poeta Visual (Arthur Lopes), fotógrafo e diretor. Codiretor do filme dos 10 anos de Castelos & Ruínas, do BK'. Ouro no Young Director Award, Cannes 2026. Indicado ao Latin Grammy 2026.">
+<meta property="og:title" content="O Poeta Visual · Castelos & Ruínas">
+<meta property="og:description" content="Fotógrafo e diretor. Ouro no YDA Cannes 2026. Indicado ao Latin Grammy 2026.">
+<meta property="og:image" content="img/f56.jpg">
+<meta name="theme-color" content="#0a0908">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Tinos:wght@700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+<!-- abertura: cartela do filme -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__card">
+    <span class="intro__w intro__w--l">Castelos</span>
+    <span class="intro__amp">&amp;</span>
+    <span class="intro__frame"><img src="img/f103.jpg" alt=""></span>
+    <span class="intro__w intro__w--r">Ruínas</span>
+  </div>
+  <p class="intro__by">um filme de willy hajli &amp; poeta visual</p>
+  <button class="intro__skip" type="button">pular</button>
+</div>
+
+<header class="hd" id="hd">
+  <a class="hd__name" href="#top">O Poeta Visual</a>
+  <nav class="hd__nav" id="nav">
+    <a href="#dualidade">Castelo / Ruína</a>
+    <a href="#filme">O filme</a>
+    <a href="#premios">Prêmios</a>
+    <a href="#monumental">Monumental</a>
+    <a href="#poeta">Quem filma</a>
+    <a href="#contato" class="hd__cta">Contato</a>
+  </nav>
+  <button class="hd__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">menu</button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" data-hd="dark">
+    <video class="hero__vid" src="video/hero.mp4" poster="img/f45.jpg" autoplay muted loop playsinline></video>
+    <div class="grain"></div>
+    <div class="scope scope--t"></div><div class="scope scope--b"></div>
+    <div class="hero__meta">
+      <span>REC <i class="dot"></i></span>
+      <span class="tc" id="tc">00:00:00:00</span>
+      <span>B&amp;W · 2.39:1</span>
+    </div>
+    <h1 class="vh">O Poeta Visual, fotógrafo e diretor</h1>
+    <div class="hero__card">
+      <p class="hero__by">um ensaio visual de poeta visual &amp; willy hajli</p>
+      <p class="card" aria-label="Castelos & Ruínas">
+        <span class="card__w">Castelos</span>
+        <span class="card__amp">&amp;</span>
+        <span class="card__frame"><img src="img/f103.jpg" alt=""></span>
+        <span class="card__w">Ruínas</span>
+      </p>
+      <p class="hero__by">BK' · 10 anos · "Caminhos"</p>
+    </div>
+    <div class="hero__aside">
+      <p>Fotógrafo e diretor. Codireção do filme dos <em>10 anos de Castelos &amp; Ruínas</em>, do BK'.</p>
+      <ul class="hero__badges">
+        <li>Ouro · Young Director Award · Cannes 2026</li>
+        <li>Indicado · Latin Grammy 2026</li>
+      </ul>
+    </div>
+    <p class="sub" id="sub">não é só a história do Abebe</p>
+    <a class="hero__down" href="#dualidade">role ↓</a>
+  </section>
+
+  <!-- DUALIDADE -->
+  <section class="dual" id="dualidade" data-hd="dark">
+    <div class="dual__head">
+      <p class="eyebrow">ato i · a dualidade</p>
+      <h2 class="h2">Todo castelo<br>guarda uma <em>ruína</em>.</h2>
+      <p class="lead">O filme é construído em duas metades. O <strong>Castelo</strong> é o feminino: abrigo, proteção, a mãe que fala com o filho. A <strong>Ruína</strong> é a luta: os combatentes e os desafios do caminho. Arraste a linha.</p>
+    </div>
+    <div class="split" id="split" style="--x:50%">
+      <figure class="split__side split__side--r">
+        <video src="video/ruina.mp4" poster="img/f108.jpg" muted loop playsinline data-lazy></video>
+        <figcaption><b>Ruína</b><span>os lutadores · o caminho</span></figcaption>
+      </figure>
+      <figure class="split__side split__side--c">
+        <video src="video/castelo.mp4" poster="img/f103.jpg" muted loop playsinline data-lazy></video>
+        <figcaption><b>Castelo</b><span>o feminino · o abrigo</span></figcaption>
+      </figure>
+      <div class="split__bar" role="slider" tabindex="0" aria-label="Castelo ou Ruína" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <span class="split__knob">&amp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- O FILME -->
+  <section class="film" id="filme" data-hd="dark">
+    <div class="film__head">
+      <p class="eyebrow">ato ii · o filme</p>
+      <h2 class="h2">Caminhos</h2>
+      <p class="lead">Um ensaio visual sobre a faixa "Caminhos" que abriu as comemorações de 10 anos do álbum. Sem narrativa convencional: fragmentos, ancestralidade e cosmologia num retrato metafórico de Abebe Bikila.</p>
+    </div>
+
+    <div class="screen" id="screen">
+      <video id="filmVid" src="video/caminhos.mp4" poster="img/f19.jpg" preload="none" playsinline></video>
+      <button class="screen__play" id="playBtn" type="button" aria-label="Assistir o filme com som">
+        <span class="screen__ring"></span>
+        <span class="screen__lbl">assistir<small>2:53 · com som</small></span>
+      </button>
+      <div class="screen__bar"><i id="filmProg"></i></div>
+    </div>
+
+    <div class="credits">
+      <dl class="credits__list">
+        <div><dt>direção</dt><dd>Willy Hajli &amp; Poeta Visual</dd></div>
+        <div><dt>artista</dt><dd>BK'</dd></div>
+        <div><dt>faixa</dt><dd>Caminhos</dd></div>
+        <div><dt>álbum</dt><dd>Castelos &amp; Ruínas · 10 anos</dd></div>
+        <div><dt>produção</dt><dd>Moonheist</dd></div>
+        <div><dt>som</dt><dd>canto etíope e desenho de som original</dd></div>
+        <div><dt>referências</dt><dd>Arthur Jafa · John Akomfrah · LaToya Ruby Frazier · Deana Lawson</dd></div>
+      </dl>
+      <blockquote class="quote">
+        <p>"não é só a história do Abebe, é uma história que também fala sobre mim"</p>
+        <cite>Poeta Visual, à Billboard Brasil</cite>
+      </blockquote>
+    </div>
+
+    <div class="stills" aria-label="Fotogramas do filme">
+      <figure><img src="img/f122.jpg" alt="Mulher de perfil diante de uma parede descascada" loading="lazy"></figure>
+      <figure><img src="img/f151.jpg" alt="Mulher vestida de branco com guias diante de papel de parede floral" loading="lazy"></figure>
+      <figure><img src="img/f52.jpg" alt="Sala vista de cima, com sofá, tapete e uma mulher de branco" loading="lazy"></figure>
+      <figure><img src="img/f128.jpg" alt="Homem em movimento sob uma estrutura de ferro" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- PRÊMIOS -->
+  <section class="awards" id="premios" data-hd="light">
+    <p class="eyebrow">ato iii · os louros</p>
+    <div class="awards__grid">
+      <article class="laurel">
+        <svg class="laurel__wreath" viewBox="0 0 200 200" aria-hidden="true"><use href="#wreath"/></svg>
+        <div class="laurel__in">
+          <span class="laurel__k">Ouro</span>
+          <h3>Young Director Award</h3>
+          <p>Cannes · 2026</p>
+        </div>
+        <p class="laurel__note">Premiação internacional de novos diretores, realizada durante o Festival de Cannes.</p>
+      </article>
+      <article class="laurel">
+        <svg class="laurel__wreath" viewBox="0 0 200 200" aria-hidden="true"><use href="#wreath"/></svg>
+        <div class="laurel__in">
+          <span class="laurel__k">Indicado</span>
+          <h3>Latin Grammy</h3>
+          <p>27ª edição · 2026</p>
+        </div>
+        <p class="laurel__note">Melhor Vídeo Musical Versão Curta: <em>10 anos de Castelos &amp; Ruínas</em>, BK'.</p>
+      </article>
+    </div>
+    <svg width="0" height="0" style="position:absolute">
+      <defs>
+        <g id="wreath" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M100 186 C40 176 14 120 30 58"/>
+          <path d="M100 186 C160 176 186 120 170 58"/>
+          <g class="lv">
+            <path d="M34 150c-12-2-18-10-18-10s10-4 18 2"/><path d="M26 126c-11-4-15-13-15-13s10-2 17 5"/><path d="M22 101c-10-6-12-15-12-15s10 0 15 8"/><path d="M23 77c-8-7-9-16-9-16s9 2 13 10"/>
+            <path d="M46 168c-6 10-15 12-15 12s0-10 9-15"/><path d="M33 145c-3 11-11 15-11 15s-2-10 6-16"/><path d="M27 120c0 11-7 17-7 17s-4-9 3-17"/><path d="M26 95c2 11-4 18-4 18s-5-9 1-18"/>
+            <path d="M166 150c12-2 18-10 18-10s-10-4-18 2"/><path d="M174 126c11-4 15-13 15-13s-10-2-17 5"/><path d="M178 101c10-6 12-15 12-15s-10 0-15 8"/><path d="M177 77c8-7 9-16 9-16s-9 2-13 10"/>
+            <path d="M154 168c6 10 15 12 15 12s0-10-9-15"/><path d="M167 145c3 11 11 15 11 15s2-10-6-16"/><path d="M173 120c0 11 7 17 7 17s4-9-3-17"/><path d="M174 95c-2 11 4 18 4 18s5-9-1-18"/>
+          </g>
+        </g>
+      </defs>
+    </svg>
+  </section>
+
+  <!-- MONUMENTAL -->
+  <section class="mono" id="monumental" data-hd="dark">
+    <div class="mono__pin">
+      <div class="mono__head">
+        <p class="eyebrow">ato iv · monumental</p>
+        <h2 class="h2">Castelos &amp; Ruínas<br><em>10 anos tour</em></h2>
+        <p class="lead">Do Maracanã ao Nubank Parque, em 19.09: o filme virou telão, e a câmera seguiu a turnê.</p>
+        <p class="mono__hint">arraste / role →</p>
+      </div>
+      <div class="strip" id="strip">
+        <figure class="frame frame--v">
+          <video src="video/maracana.mp4" poster="img/maracana-trio.jpg" muted loop playsinline data-lazy></video>
+          <figcaption><span>01</span> Estádio do Maracanã · sax nas arquibancadas vazias</figcaption>
+        </figure>
+        <figure class="frame frame--p">
+          <img src="img/maracana-trio.jpg" alt="Três pessoas de branco e preto no gramado do Maracanã, uma delas com saxofone" loading="lazy">
+          <figcaption><span>02</span> Maracanã · antes do show</figcaption>
+        </figure>
+        <figure class="frame frame--v">
+          <video src="video/telao.mp4" poster="img/telao-frase.jpg" muted loop playsinline data-lazy></video>
+          <figcaption><span>03</span> Nubank Parque · o filme no telão</figcaption>
+        </figure>
+        <figure class="frame frame--q">
+          <img src="img/telao-frase.jpg" alt="Telão escuro com a frase sobre reconhecer o rei na multidão" loading="lazy">
+          <figcaption><span>04</span> "o verdadeiro líder caminha sobre seus próprios passos"</figcaption>
+        </figure>
+        <figure class="frame frame--p">
+          <img src="img/vinil.jpg" alt="Mão de luva preta segurando o vinil oficial de Castelos & Ruínas com moldura dourada" loading="lazy">
+          <figcaption><span>05</span> Vinil oficial de Castelos &amp; Ruínas</figcaption>
+        </figure>
+        <figure class="frame frame--end">
+          <p>"Monumental, 10 anos de Castelos &amp; Ruínas."</p>
+          <a href="https://www.instagram.com/poeta_____visual/" target="_blank" rel="noopener">ver no instagram ↗</a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM FILMA -->
+  <section class="poeta" id="poeta" data-hd="dark">
+    <div class="poeta__eye">
+      <video src="video/olhar.mp4" poster="img/f56.jpg" muted loop playsinline data-lazy></video>
+      <div class="grain"></div>
+      <p class="poeta__name" aria-hidden="true"><span>O Poeta</span><span>Visual</span></p>
+    </div>
+    <div class="poeta__txt">
+      <p class="eyebrow">ato v · quem filma</p>
+      <h2 class="h2">Arthur Lopes,<br><em>23 anos</em></h2>
+      <p class="lead">23 anos, estudante de Fotografia na Belas Artes de São Paulo. Um trabalho que transita entre fotografia, moda, rap e audiovisual, com referências na cultura urbana, na ancestralidade e na juventude negra brasileira.</p>
+      <figure class="poeta__set">
+        <img src="img/set.jpg" alt="Arthur Lopes no set, de headset, ao lado do câmera" loading="lazy">
+      </figure>
+      <blockquote class="quote quote--sm">
+        <p>"Mostra que é possível transformar nossas referências em uma linguagem capaz de chegar a outros lugares."</p>
+        <cite>ao The University Journal</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato" data-hd="light">
+    <p class="eyebrow">fim · próximo filme</p>
+    <h2 class="contact__big">Qual é a <em>sua</em> história?</h2>
+    <form class="slate" id="slate">
+      <div class="slate__top" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="slate__grid">
+        <label><span>nome</span><input name="nome" required autocomplete="name"></label>
+        <label><span>artista / marca</span><input name="projeto"></label>
+        <label class="full"><span>formato</span>
+          <select name="formato">
+            <option>Videoclipe</option>
+            <option>Filme / ensaio visual</option>
+            <option>Fotografia</option>
+            <option>Campanha de moda</option>
+            <option>Show / turnê</option>
+          </select>
+        </label>
+        <label class="full"><span>a ideia</span><textarea name="ideia" rows="3" required></textarea></label>
+      </div>
+      <button class="slate__go" type="submit">enviar pra poetavisual@11mm.ag →</button>
+    </form>
+    <ul class="contact__links">
+      <li><a href="mailto:poetavisual@11mm.ag">poetavisual@11mm.ag</a></li>
+      <li><a href="https://www.instagram.com/poeta_____visual/" target="_blank" rel="noopener">@poeta_____visual</a></li>
+      <li><a href="https://www.instagram.com/11.mm.ag/" target="_blank" rel="noopener">@11.mm.ag</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="ft" data-hd="dark">
+  <p class="ft__card"><span>Castelos</span> <i>&amp;</i> <span>Ruínas</span></p>
+  <p class="ft__small">O Poeta Visual · São Paulo · 2026</p>
+</footer>
+
+<script src="main.js?v=2"></script>
+</body>
+</html>
