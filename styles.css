@@ -245,9 +245,16 @@ html.intro-on .intro{display:grid}
   .hd__nav a{opacity:1}
   .hd__cta{border:0;padding:0;margin:0;color:var(--gold-2)}
   .hd.menu-open{color:var(--bone)}
-  .hero__aside{left:var(--pad);right:var(--pad);width:auto;bottom:calc(clamp(28px,7vh,72px) + 70px)}
-  .hero__card{bottom:auto;top:calc(clamp(28px,7vh,72px) + 110px);right:var(--pad)}
-  .card{font-size:clamp(34px,10.4vw,80px);gap:8px}
+  /* hero no celular: só o filme, a cartela e um caminho */
+  .scope{height:22px}
+  .hero__meta,.sub,.hero__aside p,.hero__badges,.hero__by + .card + .hero__by{display:none}
+  .hero__vid{filter:grayscale(1) contrast(1.05) brightness(.6)}
+  .hero__card{left:var(--pad);right:var(--pad);bottom:calc(22px + 92px)}
+  .hero__by:first-child{font-size:0}
+  .hero__tag{font-size:10px;margin:0}
+  .card{font-size:clamp(34px,10.4vw,80px);gap:8px;margin:16px 0 0}
+  .hero__aside{left:var(--pad);right:var(--pad);width:auto;bottom:calc(22px + 40px)}
+  .hero__all{margin:0}
   .hero__down{display:none}
   .film__head{grid-template-columns:1fr}
   .credits{grid-template-columns:1fr;gap:48px}
