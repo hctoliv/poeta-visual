@@ -113,56 +113,47 @@
   wreath.closest('svg').remove();
 
   /* ---------- reveals ---------- */
-  $$('.eyebrow, .h2, .lead, .credits__list div, .quote, .stills figure, .laurel, .idx__row, .press li, .contact__big, .slate').forEach(el => el.classList.add('rv'));
+  $$('.eyebrow, .h2, .lead, .credits__list div, .quote, .stills figure, .laurel, .press li, .contact__big, .slate').forEach(el => el.classList.add('rv'));
   const rio = new IntersectionObserver(entries => entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); rio.unobserve(e.target); }
   }), { rootMargin: '0px 0px -10% 0px' });
   $$('.rv').forEach(el => rio.observe(el));
 
-  /* ---------- obras: prévia que segue o mouse + lightbox ---------- */
-  const peek = $('#peek'), pv = $('video', peek), pi = $('img', peek);
-  const lb = $('#lb'), lv = $('video', lb), lim = $('img', lb), lcap = $('.lb__cap', lb);
-  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
-  let px = 0, py = 0, cx = 0, cy = 0, peekRaf = 0;
-  const follow = () => {
-    cx += (px - cx) * .18; cy += (py - cy) * .18;
-    peek.style.left = cx + 'px'; peek.style.top = cy + 'px';
-    peekRaf = peek.classList.contains('on') ? requestAnimationFrame(follow) : 0;
+  /* ---------- obras: filtros + lightbox ---------- */
+  const works = $('#works'), tiles = $$('.work', works);
+  $$('.chip').forEach(chip => chip.addEventListener('click', () => {
+    $$('.chip').forEach(c => c.classList.toggle('on', c === chip));
+    const f = chip.dataset.f;
+    works.classList.toggle('filtering', f !== 'all');
+    tiles.forEach(t => t.classList.toggle('show', f === 'all' || t.dataset.cat === f));
+  }));
+  const lb = $('#lb'), lim = $('img', lb), lcap = $('.lb__cap', lb);
+  const openWork = t => {
+    lim.src = t.dataset.full;
+    lim.alt = $('img', t).alt;
+    const b = $('b', t).textContent, k = $('.work__k', t).textContent, y = $('.work__y', t).textContent;
+    lcap.innerHTML = '';
+    lcap.append(`${b} · ${k} · ${y}  `);
+    const a = document.createElement('a');
+    a.href = t.dataset.ig; a.target = '_blank'; a.rel = 'noopener'; a.textContent = 'ver no instagram ↗';
+    lcap.append(a);
+    lb.hidden = false; document.body.style.overflow = 'hidden';
   };
-  $$('.idx__row').forEach(row => {
-    row.tabIndex = 0;
-    row.setAttribute('role', 'link');
-    if (fine) {
-      row.addEventListener('mouseenter', e => {
-        const { prev, img } = row.dataset;
-        peek.classList.toggle('vert', 'vertical' in row.dataset);
-        peek.classList.toggle('color', !!img && img.includes('vinil'));
-        if (prev) { pi.hidden = true; pv.hidden = false; if (!pv.src.endsWith(prev)) pv.src = prev; pv.play().catch(() => {}); }
-        else if (img) { pv.hidden = true; pv.pause(); pi.hidden = false; pi.src = img; }
-        else return;
-        if (!peek.classList.contains('on')) { cx = px = e.clientX; cy = py = e.clientY; }
-        peek.classList.add('on');
-        if (!peekRaf) peekRaf = requestAnimationFrame(follow);
-      });
-      row.addEventListener('mousemove', e => { px = e.clientX; py = e.clientY; });
-      row.addEventListener('mouseleave', () => { peek.classList.remove('on'); pv.pause(); });
-    }
-    const open = () => {
-      const { href, play, img, poster } = row.dataset;
-      if (href) { href.startsWith('#') ? $(href).scrollIntoView({ behavior: 'smooth' }) : window.open(href, '_blank', 'noopener'); return; }
-      peek.classList.remove('on'); pv.pause();
-      lcap.textContent = row.querySelector('.idx__t').firstChild.textContent.trim() + ' · ' + row.querySelector('.idx__y').textContent;
-      if (play) { lim.hidden = true; lv.hidden = false; lv.poster = poster || ''; lv.src = play; lv.play().catch(() => {}); }
-      else { lv.hidden = true; lim.hidden = false; lim.src = img; lim.alt = lcap.textContent; }
-      lb.hidden = false; document.body.style.overflow = 'hidden';
-    };
-    row.addEventListener('click', open);
-    row.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+  tiles.forEach(t => {
+    t.addEventListener('click', () => openWork(t));
+    t.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openWork(t); } });
   });
-  const closeLb = () => { lb.hidden = true; lv.pause(); lv.removeAttribute('src'); lv.load(); document.body.style.overflow = ''; };
+  const closeLb = () => { lb.hidden = true; lim.removeAttribute('src'); document.body.style.overflow = ''; };
   $('.lb__x', lb).addEventListener('click', closeLb);
   lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
-  addEventListener('keydown', e => { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
+  addEventListener('keydown', e => {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      const vis = tiles.filter(t => t.offsetParent), i = vis.findIndex(t => t.dataset.full === lim.getAttribute('src'));
+      if (i > -1) openWork(vis[(i + (e.key === 'ArrowRight' ? 1 : vis.length - 1)) % vis.length]);
+    }
+  });
 
   /* ---------- um só loop de scroll ---------- */
   const hero = $('.hero'), zones = $$('[data-hd]');
