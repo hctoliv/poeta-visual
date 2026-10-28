@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Tinos:wght@700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -31,10 +31,9 @@
 <header class="hd" id="hd">
   <a class="hd__name" href="#top">O Poeta Visual</a>
   <nav class="hd__nav" id="nav">
-    <a href="#dualidade">Castelo / Ruína</a>
-    <a href="#filme">O filme</a>
+    <a href="#dualidade">Castelos &amp; Ruínas</a>
     <a href="#premios">Prêmios</a>
-    <a href="#monumental">Monumental</a>
+    <a href="#obras">Obras</a>
     <a href="#poeta">Quem filma</a>
     <a href="#contato" class="hd__cta">Contato</a>
   </nav>
@@ -55,7 +54,7 @@
     </div>
     <h1 class="vh">O Poeta Visual, fotógrafo e diretor</h1>
     <div class="hero__card">
-      <p class="hero__by">um ensaio visual de poeta visual &amp; willy hajli</p>
+      <p class="hero__by"><span class="hero__tag">obra em destaque</span> um ensaio visual de poeta visual &amp; willy hajli</p>
       <p class="card" aria-label="Castelos & Ruínas">
         <span class="card__w">Castelos</span>
         <span class="card__amp">&amp;</span>
@@ -65,11 +64,13 @@
       <p class="hero__by">BK' · 10 anos · "Caminhos"</p>
     </div>
     <div class="hero__aside">
-      <p>Fotógrafo e diretor. Codireção do filme dos <em>10 anos de Castelos &amp; Ruínas</em>, do BK'.</p>
+      <p>O Poeta Visual é fotógrafo e diretor: filme, show, moda e rua. Em destaque, o filme dos <em>10 anos de Castelos &amp; Ruínas</em>, do BK'.</p>
       <ul class="hero__badges">
         <li>Ouro · Young Director Award · Cannes 2026</li>
         <li>Indicado · Latin Grammy 2026</li>
+        <li>Ouro · Clube de Criação 2026</li>
       </ul>
+      <a class="hero__all" href="#obras">ver todas as obras →</a>
     </div>
     <p class="sub" id="sub">não é só a história do Abebe</p>
     <a class="hero__down" href="#dualidade">role ↓</a>
@@ -116,11 +117,12 @@
 
     <div class="credits">
       <dl class="credits__list">
-        <div><dt>direção</dt><dd>Willy Hajli &amp; Poeta Visual</dd></div>
+        <div><dt>roteiro e direção</dt><dd>Willy Hajli &amp; Poeta Visual</dd></div>
         <div><dt>artista</dt><dd>BK'</dd></div>
         <div><dt>faixa</dt><dd>Caminhos</dd></div>
         <div><dt>álbum</dt><dd>Castelos &amp; Ruínas · 10 anos</dd></div>
-        <div><dt>produção</dt><dd>Moonheist</dd></div>
+        <div><dt>produção</dt><dd>Moonheist &amp; Mugshot Music</dd></div>
+        <div><dt>direção criativa</dt><dd>11MM</dd></div>
         <div><dt>som</dt><dd>canto etíope e desenho de som original</dd></div>
         <div><dt>referências</dt><dd>Arthur Jafa · John Akomfrah · LaToya Ruby Frazier · Deana Lawson</dd></div>
       </dl>
@@ -160,6 +162,15 @@
         </div>
         <p class="laurel__note">Melhor Vídeo Musical Versão Curta: <em>10 anos de Castelos &amp; Ruínas</em>, BK'.</p>
       </article>
+      <article class="laurel">
+        <svg class="laurel__wreath" viewBox="0 0 200 200" aria-hidden="true"><use href="#wreath"/></svg>
+        <div class="laurel__in">
+          <span class="laurel__k">4 troféus</span>
+          <h3>Clube de Criação</h3>
+          <p>Festival · 2026</p>
+        </div>
+        <p class="laurel__note">Ouro em Filme / Videoclipe, Prata em Melhor Uso de Música, Anuário em Sound Design e em Direção Geral.</p>
+      </article>
     </div>
     <svg width="0" height="0" style="position:absolute">
       <defs>
@@ -177,43 +188,73 @@
     </svg>
   </section>
 
-  <!-- MONUMENTAL -->
-  <section class="mono" id="monumental" data-hd="dark">
-    <div class="mono__pin">
-      <div class="mono__head">
-        <p class="eyebrow">ato iv · monumental</p>
-        <h2 class="h2">Castelos &amp; Ruínas<br><em>10 anos tour</em></h2>
-        <p class="lead">Do Maracanã ao Nubank Parque, em 19.09: o filme virou telão, e a câmera seguiu a turnê.</p>
-        <p class="mono__hint">arraste / role →</p>
-      </div>
-      <div class="strip" id="strip">
-        <figure class="frame frame--v">
-          <video src="video/maracana.mp4" poster="img/maracana-trio.jpg" muted loop playsinline data-lazy></video>
-          <figcaption><span>01</span> Estádio do Maracanã · sax nas arquibancadas vazias</figcaption>
-        </figure>
-        <figure class="frame frame--p">
-          <img src="img/maracana-trio.jpg" alt="Três pessoas de branco e preto no gramado do Maracanã, uma delas com saxofone" loading="lazy">
-          <figcaption><span>02</span> Maracanã · antes do show</figcaption>
-        </figure>
-        <figure class="frame frame--v">
-          <video src="video/telao.mp4" poster="img/telao-frase.jpg" muted loop playsinline data-lazy></video>
-          <figcaption><span>03</span> Nubank Parque · o filme no telão</figcaption>
-        </figure>
-        <figure class="frame frame--q">
-          <img src="img/telao-frase.jpg" alt="Telão escuro com a frase sobre reconhecer o rei na multidão" loading="lazy">
-          <figcaption><span>04</span> "o verdadeiro líder caminha sobre seus próprios passos"</figcaption>
-        </figure>
-        <figure class="frame frame--p">
-          <img src="img/vinil.jpg" alt="Mão de luva preta segurando o vinil oficial de Castelos & Ruínas com moldura dourada" loading="lazy">
-          <figcaption><span>05</span> Vinil oficial de Castelos &amp; Ruínas</figcaption>
-        </figure>
-        <figure class="frame frame--end">
-          <p>"Monumental, 10 anos de Castelos &amp; Ruínas."</p>
-          <a href="https://www.instagram.com/poeta_____visual/" target="_blank" rel="noopener">ver no instagram ↗</a>
-        </figure>
-      </div>
+  <!-- OBRAS -->
+  <section class="obras" id="obras" data-hd="dark">
+    <div class="obras__head">
+      <p class="eyebrow">ato iv · obras</p>
+      <h2 class="h2">Poesia,<br><em>independente da forma</em>.</h2>
+      <p class="lead">Filme, show, fotografia e rua. Passe o mouse (ou toque) numa obra pra ver.</p>
     </div>
+    <ol class="idx" id="idx">
+      <li class="idx__row idx__row--main" data-prev="video/hero.mp4" data-href="#filme">
+        <span class="idx__n">01</span>
+        <span class="idx__t">Castelos &amp; Ruínas <small>BK' · "Caminhos"</small></span>
+        <span class="idx__k">filme · roteiro e direção com Willy Hajli</span>
+        <span class="idx__y">2026</span>
+        <span class="idx__badge">obra em destaque</span>
+      </li>
+      <li class="idx__row" data-prev="video/maracana.mp4" data-play="video/obra-maracana.mp4" data-poster="img/maracana-sax.jpg">
+        <span class="idx__n">02</span>
+        <span class="idx__t">Maracanã <small>Castelos &amp; Ruínas · 10 anos tour</small></span>
+        <span class="idx__k">vídeo · sax nas arquibancadas vazias</span>
+        <span class="idx__y">ago 2026</span>
+      </li>
+      <li class="idx__row" data-prev="video/telao.mp4" data-play="video/obra-monumental.mp4" data-poster="img/telao-frase.jpg">
+        <span class="idx__n">03</span>
+        <span class="idx__t">Monumental <small>Nubank Parque · 19.09</small></span>
+        <span class="idx__k">show · o filme no telão</span>
+        <span class="idx__y">set 2026</span>
+      </li>
+      <li class="idx__row" data-prev="video/olhar.mp4" data-play="video/obra-semtitulo.mp4" data-poster="img/semtitulo.jpg">
+        <span class="idx__n">04</span>
+        <span class="idx__t">Sem título <small>curta em preto e branco</small></span>
+        <span class="idx__k">vídeo · 33s</span>
+        <span class="idx__y">set 2026</span>
+      </li>
+      <li class="idx__row" data-prev="video/democracia.mp4" data-play="video/obra-democracia.mp4" data-poster="img/democracia.jpg" data-vertical>
+        <span class="idx__n">05</span>
+        <span class="idx__t">Fé nas crianças e na democracia <small>registro de rua</small></span>
+        <span class="idx__k">vídeo · São Paulo</span>
+        <span class="idx__y">out 2026</span>
+      </li>
+      <li class="idx__row" data-img="img/vinil.jpg">
+        <span class="idx__n">06</span>
+        <span class="idx__t">Vinil oficial <small>Castelos &amp; Ruínas</small></span>
+        <span class="idx__k">fotografia</span>
+        <span class="idx__y">set 2026</span>
+      </li>
+      <li class="idx__row" data-img="img/maracana-trio.jpg">
+        <span class="idx__n">07</span>
+        <span class="idx__t">Gramado <small>Maracanã, antes do show</small></span>
+        <span class="idx__k">fotografia</span>
+        <span class="idx__y">ago 2026</span>
+      </li>
+      <li class="idx__row idx__row--text" data-href="https://www.instagram.com/poeta_____visual/">
+        <span class="idx__n">08</span>
+        <span class="idx__t">Shows, moda e editorial <small>onde tudo começou</small></span>
+        <span class="idx__k">fotografia · desde a pandemia</span>
+        <span class="idx__y">↗</span>
+      </li>
+    </ol>
+    <figure class="peek" id="peek" aria-hidden="true"><video muted loop playsinline></video><img alt=""></figure>
   </section>
+
+  <div class="lb" id="lb" hidden>
+    <button class="lb__x" type="button" aria-label="Fechar">fechar ×</button>
+    <video controls playsinline></video>
+    <img alt="">
+    <p class="lb__cap"></p>
+  </div>
 
   <!-- QUEM FILMA -->
   <section class="poeta" id="poeta" data-hd="dark">
@@ -225,14 +266,24 @@
     <div class="poeta__txt">
       <p class="eyebrow">ato v · quem filma</p>
       <h2 class="h2">Arthur Lopes,<br><em>23 anos</em></h2>
-      <p class="lead">23 anos, estudante de Fotografia na Belas Artes de São Paulo. Um trabalho que transita entre fotografia, moda, rap e audiovisual, com referências na cultura urbana, na ancestralidade e na juventude negra brasileira.</p>
+      <p class="lead">De Mogi das Cruzes, veio do polo aquático. Na pandemia começou a fotografar de um jeito livre e intuitivo: primeiro shows, depois moda e editorial. Hoje, aos 23, estuda Fotografia na Belas Artes de São Paulo e transita entre fotografia, moda, rap e audiovisual, com referências na cultura urbana, na ancestralidade e na juventude negra brasileira.</p>
       <figure class="poeta__set">
         <img src="img/set.jpg" alt="Arthur Lopes no set, de headset, ao lado do câmera" loading="lazy">
       </figure>
       <blockquote class="quote quote--sm">
-        <p>"Mostra que é possível transformar nossas referências em uma linguagem capaz de chegar a outros lugares."</p>
-        <cite>ao The University Journal</cite>
+        <p>"Eu sou um poeta visual. Eu faço poesia, independente da forma."</p>
+        <cite>à Cultura Preta</cite>
       </blockquote>
+      <div class="press">
+        <p class="eyebrow">na mídia</p>
+        <ul>
+          <li><a href="https://billboard.com.br/bk-castelos-ruinas-filme-inedito/" target="_blank" rel="noopener"><b>Billboard Brasil</b><span>BK' celebra Castelos &amp; Ruínas com filme inédito</span><i>mai 2026 ↗</i></a></li>
+          <li><a href="https://culturapreta.com/2026/04/24/a-poesia-audiovisual-historias-memoria-e-o-que-permanece-entre-luz-e-ruina/" target="_blank" rel="noopener"><b>Cultura Preta</b><span>A poesia audiovisual: histórias, memória e o que permanece entre luz e ruína</span><i>abr 2026 ↗</i></a></li>
+          <li><a href="https://theuniversityjournal.com/estudante-da-belas-artes-conquista-ouro-em-premiacao-internacional-ligada-ao-festival-de-cannes/" target="_blank" rel="noopener"><b>The University Journal</b><span>Estudante da Belas Artes conquista Ouro ligado a Cannes</span><i>set 2026 ↗</i></a></li>
+          <li><a href="https://www.instagram.com/notthesamo/reel/DdHZXBZBk27/" target="_blank" rel="noopener"><b>NOTTHESAMO</b><span>Poeta Visual em uma conversa, no Prosa e Vinho</span><i>set 2026 ↗</i></a></li>
+          <li><a href="https://www.instagram.com/poeta_____visual/reel/DehlHThsLOy/" target="_blank" rel="noopener"><b>Os Donos da Bola · Band</b><span>com Neto, na TV aberta</span><i>out 2026 ↗</i></a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -272,6 +323,6 @@
   <p class="ft__small">O Poeta Visual · São Paulo · 2026</p>
 </footer>
 
-<script src="main.js?v=2"></script>
+<script src="main.js?v=4"></script>
 </body>
 </html>
