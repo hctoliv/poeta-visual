@@ -18,6 +18,8 @@
       try { sessionStorage.setItem('pv-intro', '1'); } catch (e) {}
       setTimeout(() => intro.remove(), 800);
     };
+    const iImg = $('.intro__frame img', intro), flips = $$('.top .work img, #works .work img').slice(0, 8).map(i => i.getAttribute('src'));
+    flips.forEach((src, k) => t.push(setTimeout(() => { iImg.src = src; }, 300 + k * 280)));
     t.push(setTimeout(() => intro.classList.add('s1'), 250));
     t.push(setTimeout(() => intro.classList.add('s2'), 900));
     t.push(setTimeout(() => intro.classList.add('s3'), 1500));
@@ -41,28 +43,23 @@
     menuBtn.setAttribute('aria-expanded', false); menuBtn.textContent = 'menu';
   }));
 
-  /* ---------- timecode e legendas do hero ---------- */
-  const tc = $('#tc'), t0 = performance.now();
-  const pad = n => String(n).padStart(2, '0');
-  setInterval(() => {
-    const f = Math.floor((performance.now() - t0) / (1000 / 24));
-    tc.textContent = `${pad(Math.floor(f / 86400))}:${pad(Math.floor(f / 1440) % 60)}:${pad(Math.floor(f / 24) % 60)}:${pad(f % 24)}`;
-  }, 1000 / 24);
-
-  const sub = $('#sub');
-  const lines = [
-    'não é só a história do Abebe',
-    'é uma história que também fala sobre mim',
-    'castelos & ruínas · 10 anos',
-    'um filme sobre o passado, uma projeção de futuro',
-    'ouro · young director award · cannes',
-    'indicado · latin grammy 2026',
-  ];
-  let li = 0;
-  setInterval(() => {
-    sub.classList.add('fade');
-    setTimeout(() => { li = (li + 1) % lines.length; sub.textContent = lines[li]; sub.classList.remove('fade'); }, 450);
-  }, 3600);
+  /* ---------- hero: a janela passa pelas obras ---------- */
+  const reel = $$('.top .work, #works .work').map(w => ({ src: $('img', w).getAttribute('src'), t: `${$('b', w).textContent} · ${$('.work__k', w).textContent}` }));
+  const hFrame = $('#heroFrame'), hBg = $('#heroBg'), hNow = $('#heroNow'), hN = $('#hcN');
+  $('#hcT').textContent = String(reel.length).padStart(2, '0');
+  reel.forEach(r => { const i = new Image(); i.src = r.src; });
+  let hi = 0, hTimer;
+  const showWork = i => {
+    hi = (i + reel.length) % reel.length;
+    hFrame.src = hBg.src = reel[hi].src;
+    hNow.textContent = reel[hi].t;
+    hN.textContent = String(hi + 1).padStart(2, '0');
+  };
+  const runHero = () => { clearInterval(hTimer); if (!reduce) hTimer = setInterval(() => showWork(hi + 1), 1400); };
+  showWork(0); runHero();
+  const hCard = $('.card__frame');
+  hCard.addEventListener('mouseenter', () => clearInterval(hTimer));
+  hCard.addEventListener('mouseleave', runHero);
 
   /* ---------- castelo / ruína ---------- */
   const split = $('#split'), bar = $('.split__bar', split);
@@ -120,7 +117,7 @@
   $$('.rv').forEach(el => rio.observe(el));
 
   /* ---------- obras: filtros + lightbox ---------- */
-  const works = $('#works'), tiles = $$('.work', works);
+  const works = $('#works'), tiles = $$('.work', works), allWorks = $$('.work');
   $$('.chip').forEach(chip => chip.addEventListener('click', () => {
     $$('.chip').forEach(c => c.classList.toggle('on', c === chip));
     const f = chip.dataset.f;
@@ -139,7 +136,7 @@
     lcap.append(a);
     lb.hidden = false; document.body.style.overflow = 'hidden';
   };
-  tiles.forEach(t => {
+  allWorks.forEach(t => {
     t.addEventListener('click', () => openWork(t));
     t.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openWork(t); } });
   });

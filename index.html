@@ -3,38 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>O Poeta Visual · Castelos &amp; Ruínas</title>
-<meta name="description" content="O Poeta Visual (Arthur Lopes), fotógrafo e diretor. Codiretor do filme dos 10 anos de Castelos & Ruínas, do BK'. Ouro no Young Director Award, Cannes 2026. Indicado ao Latin Grammy 2026.">
-<meta property="og:title" content="O Poeta Visual · Castelos & Ruínas">
+<title>O Poeta Visual · fotografia e direção</title>
+<meta name="description" content="O Poeta Visual (Arthur Lopes), fotógrafo e diretor de São Paulo. Moda, música, marcas e cinema: Prada, Fendi, Matuê, 30PRAUM, Nike. Ouro no Young Director Award, Cannes 2026.">
+<meta property="og:title" content="O Poeta Visual · fotografia e direção">
 <meta property="og:description" content="Fotógrafo e diretor. Ouro no YDA Cannes 2026. Indicado ao Latin Grammy 2026.">
-<meta property="og:image" content="img/f56.jpg">
+<meta property="og:image" content="img/obras/DPFWVFagv41.jpg">
 <meta name="theme-color" content="#0a0908">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Tinos:wght@700&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
-<!-- abertura: cartela do filme -->
+<!-- abertura: cartela -->
 <div class="intro" id="intro" aria-hidden="true">
   <div class="intro__card">
-    <span class="intro__w intro__w--l">Castelos</span>
-    <span class="intro__amp">&amp;</span>
-    <span class="intro__frame"><img src="img/f103.jpg" alt=""></span>
-    <span class="intro__w intro__w--r">Ruínas</span>
+    <span class="intro__w intro__w--l">Poeta</span>
+    <span class="intro__frame"><img src="img/obras/DPFWVFagv41-s.jpg" alt=""></span>
+    <span class="intro__w intro__w--r">Visual</span>
   </div>
-  <p class="intro__by">um filme de willy hajli &amp; poeta visual</p>
+  <p class="intro__by">fotografia · direção · são paulo</p>
   <button class="intro__skip" type="button">pular</button>
 </div>
 
 <header class="hd" id="hd">
   <a class="hd__name" href="#top">O Poeta Visual</a>
   <nav class="hd__nav" id="nav">
+    <a href="#obras">Obras</a>
     <a href="#dualidade">Castelos &amp; Ruínas</a>
     <a href="#premios">Prêmios</a>
-    <a href="#obras">Obras</a>
-    <a href="#poeta">Quem filma</a>
+    <a href="#poeta">Sobre</a>
     <a href="#contato" class="hd__cta">Contato</a>
   </nav>
   <button class="hd__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">menu</button>
@@ -44,42 +43,172 @@
 
   <!-- HERO -->
   <section class="hero" data-hd="dark">
-    <video class="hero__vid" src="video/hero.mp4" poster="img/f45.jpg" autoplay muted loop playsinline></video>
+    <div class="hero__bg" aria-hidden="true"><img id="heroBg" src="img/obras/DPFWVFagv41-s.jpg" alt=""></div>
     <div class="grain"></div>
-    <div class="scope scope--t"></div><div class="scope scope--b"></div>
     <div class="hero__meta">
-      <span>REC <i class="dot"></i></span>
-      <span class="tc" id="tc">00:00:00:00</span>
-      <span>B&amp;W · 2.39:1</span>
+      <span>fotografia · direção</span>
+      <span class="hero__count"><b id="hcN">01</b> / <span id="hcT">24</span></span>
+      <span>São Paulo</span>
     </div>
     <h1 class="vh">O Poeta Visual, fotógrafo e diretor</h1>
     <div class="hero__card">
-      <p class="hero__by"><span class="hero__tag">obra em destaque</span> um ensaio visual de poeta visual &amp; willy hajli</p>
-      <p class="card" aria-label="Castelos & Ruínas">
-        <span class="card__w">Castelos</span>
-        <span class="card__amp">&amp;</span>
-        <span class="card__frame"><img src="img/f103.jpg" alt=""></span>
-        <span class="card__w">Ruínas</span>
-      </p>
-      <p class="hero__by">BK' · 10 anos · "Caminhos"</p>
+      <div class="card">
+        <span class="card__w">Poeta</span>
+        <a class="card__frame" href="#obras" aria-label="Ver as obras"><img id="heroFrame" src="img/obras/DPFWVFagv41-s.jpg" alt=""></a>
+        <span class="card__w card__w--i">Visual</span>
+      </div>
+      <p class="hero__now" id="heroNow">Prada · Milan Fashion Week</p>
     </div>
-    <div class="hero__aside">
-      <p>O Poeta Visual é fotógrafo e diretor: moda, música, marcas e cinema. Em destaque, o filme dos <em>10 anos de Castelos &amp; Ruínas</em>, do BK'.</p>
+    <div class="hero__foot">
+      <p class="hero__bio">Arthur Lopes. Moda, música, marcas e cinema.</p>
       <ul class="hero__badges">
         <li>Ouro · Young Director Award · Cannes 2026</li>
         <li>Indicado · Latin Grammy 2026</li>
-        <li>Ouro · Clube de Criação 2026</li>
       </ul>
-      <a class="hero__all" href="#obras">ver todas as obras →</a>
+      <a class="hero__all" href="#obras">ver as obras ↓</a>
     </div>
-    <p class="sub" id="sub">não é só a história do Abebe</p>
-    <a class="hero__down" href="#dualidade">role ↓</a>
   </section>
+
+  <!-- OBRAS -->
+  <section class="obras" id="obras" data-hd="dark">
+    <div class="obras__head">
+      <p class="eyebrow">obras · 2023—2026</p>
+      <h2 class="h2">Poesia,<br><em>independente da forma</em>.</h2>
+      <p class="lead">Capas de álbum, semana de moda em Milão e São Paulo, campanhas e projetos autorais. Toque numa foto pra ampliar.</p>
+    </div>
+    <div class="top">
+      <div class="top__head">
+        <p class="eyebrow">em alta</p>
+        <p class="top__note">Os cinco projetos com mais retorno no Instagram dele.</p>
+      </div>
+      <div class="top__grid">
+      <figure class="work top__item" data-cat="musica" data-full="img/obras/DVwBZlxjYjV.jpg" data-ig="https://www.instagram.com/p/DVwBZlxjYjV/" tabindex="0" role="button">
+        <img src="img/obras/DVwBZlxjYjV.jpg" alt="Imagem em alto contraste preto e branco de dois rostos" loading="lazy">
+        <figcaption><span class="top__rank">01</span><b>Adulto Ideal Vol.2</b><span class="work__k">capa e still · Ryu the Runner & Emite Único</span><span class="work__y">Música · 2026</span><span class="work__l">♥ 1.492 · 35 comentários</span></figcaption>
+      </figure>
+      <figure class="work top__item" data-cat="musica" data-full="img/obras/DRcjYvRjQPM.jpg" data-ig="https://www.instagram.com/p/DRcjYvRjQPM/" tabindex="0" role="button">
+        <img src="img/obras/DRcjYvRjQPM-s.jpg" alt="Retrato de Matuê no escuro, com tranças e colar" loading="lazy">
+        <figcaption><span class="top__rank">02</span><b>XTRANHO</b><span class="work__k">Matuê</span><span class="work__y">Música · 2025</span><span class="work__l">♥ 1.405 · 113 comentários</span></figcaption>
+      </figure>
+      <figure class="work top__item" data-cat="musica" data-full="img/obras/DRua35ujbCL.jpg" data-ig="https://www.instagram.com/p/DRua35ujbCL/" tabindex="0" role="button">
+        <img src="img/obras/DRua35ujbCL-s.jpg" alt="Capa do álbum Japonês: cozinha com pessoas e um traço vermelho" loading="lazy">
+        <figcaption><span class="top__rank">03</span><b>Japonês</b><span class="work__k">capa e still · 30PRAUM</span><span class="work__y">Música · 2025</span><span class="work__l">♥ 986 · 113 comentários</span></figcaption>
+      </figure>
+      <figure class="work top__item" data-cat="moda" data-full="img/obras/DO81MPjjC3X.jpg" data-ig="https://www.instagram.com/p/DO81MPjjC3X/" tabindex="0" role="button">
+        <img src="img/obras/DO81MPjjC3X-s.jpg" alt="Três pessoas em jeans e couro em preto e branco" loading="lazy">
+        <figcaption><span class="top__rank">04</span><b>Diesel</b><span class="work__k">Milan Fashion Week</span><span class="work__y">Moda · 2025</span><span class="work__l">♥ 825 · 111 comentários</span></figcaption>
+      </figure>
+      <figure class="work top__item" data-cat="musica" data-full="img/obras/DDe55LiOmR4.jpg" data-ig="https://www.instagram.com/p/DDe55LiOmR4/" tabindex="0" role="button">
+        <img src="img/obras/DDe55LiOmR4-s.jpg" alt="Cadeiras em círculo e uma pessoa deitada, em preto e branco" loading="lazy">
+        <figcaption><span class="top__rank">05</span><b>Convicto</b><span class="work__k">stills · Sant</span><span class="work__y">Música · 2024</span><span class="work__l">♥ 760 · 123 comentários</span></figcaption>
+      </figure>
+      </div>
+    </div>
+    <div class="all__head">
+      <p class="eyebrow">mais obras</p>
+      <div class="chips" role="group" aria-label="Filtrar obras">
+        <button type="button" class="chip on" data-f="all">Tudo <i>20</i></button>
+        <button type="button" class="chip" data-f="moda">Moda <i>7</i></button>
+        <button type="button" class="chip" data-f="musica">Música <i>3</i></button>
+        <button type="button" class="chip" data-f="marcas">Marcas <i>7</i></button>
+        <button type="button" class="chip" data-f="autoral">Autoral <i>3</i></button>
+      </div>
+    </div>
+    <div class="works" id="works">
+      <figure class="work" data-cat="musica" data-full="img/obras/DSLfsagj8F7.jpg" data-ig="https://www.instagram.com/p/DSLfsagj8F7/" tabindex="0" role="button">
+        <img src="img/obras/DSLfsagj8F7-s.jpg" alt="Homem sem camisa iluminado em azul, olhando para cima" loading="lazy">
+        <figcaption><b>XTRANHO pt.1</b><span class="work__k">Matuê</span><span class="work__y">Música · 2025</span><span class="work__l">♥ 508 · 64 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="musica" data-full="img/obras/DRXRRtaDSxv.jpg" data-ig="https://www.instagram.com/p/DRXRRtaDSxv/" tabindex="0" role="button">
+        <img src="img/obras/DRXRRtaDSxv-s.jpg" alt="Ryu the Runner de jaqueta camuflada e gorro cinza" loading="lazy">
+        <figcaption><b>Fotógrafo Ideal</b><span class="work__k">Ryu the Runner</span><span class="work__y">Música · 2025</span><span class="work__l">♥ 469 · 57 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="autoral" data-full="img/obras/DMq9X_4sGFc.jpg" data-ig="https://www.instagram.com/p/DMq9X_4sGFc/" tabindex="0" role="button">
+        <img src="img/obras/DMq9X_4sGFc-s.jpg" alt="Duas mulheres de véu numa rua de Luanda" loading="lazy">
+        <figcaption><b>Centro de Luanda</b><span class="work__k">Angola · África</span><span class="work__y">Autoral · 2025</span><span class="work__l">♥ 418 · 57 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/DMREESkv9zh.jpg" data-ig="https://www.instagram.com/p/DMREESkv9zh/" tabindex="0" role="button">
+        <img src="img/obras/DMREESkv9zh-s.jpg" alt="Dois boxeadores descansando num ginásio, em preto e branco" loading="lazy">
+        <figcaption><b>Luanda, Angola</b><span class="work__k">Unsharp Films para fast.desporto</span><span class="work__y">Marcas · 2025</span><span class="work__l">♥ 386 · 66 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/DUs9Jr4jXrH.jpg" data-ig="https://www.instagram.com/p/DUs9Jr4jXrH/" tabindex="0" role="button">
+        <img src="img/obras/DUs9Jr4jXrH-s.jpg" alt="Mulher de dourado andando num campo ao pôr do sol" loading="lazy">
+        <figcaption><b>Haleia</b><span class="work__k">campanha</span><span class="work__y">Marcas · 2026</span><span class="work__l">♥ 378 · 76 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/DJaTpi5PG64.jpg" data-ig="https://www.instagram.com/p/DJaTpi5PG64/" tabindex="0" role="button">
+        <img src="img/obras/DJaTpi5PG64-s.jpg" alt="Modelo de saia laranja atravessando a rua à noite" loading="lazy">
+        <figcaption><b>TOPO</b><span class="work__k">coleção Ateliê</span><span class="work__y">Moda · 2025</span><span class="work__l">♥ 365 · 45 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/DMyF983P7cw.jpg" data-ig="https://www.instagram.com/p/DMyF983P7cw/" tabindex="0" role="button">
+        <img src="img/obras/DMyF983P7cw-s.jpg" alt="Jogador com o uniforme vermelho da seleção de Angola" loading="lazy">
+        <figcaption><b>Seleção de Angola</b><span class="work__k">uniforme oficial de basquete · fast.desporto</span><span class="work__y">Marcas · 2025</span><span class="work__l">♥ 351 · 75 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="musica" data-full="img/obras/DKS52h6vkRt.jpg" data-ig="https://www.instagram.com/p/DKS52h6vkRt/" tabindex="0" role="button">
+        <img src="img/obras/DKS52h6vkRt-s.jpg" alt="Figura com véu num campo escuro" loading="lazy">
+        <figcaption><b>IRADOH</b><span class="work__k">3 atos de irmandade · álbum</span><span class="work__y">Música · 2025</span><span class="work__l">♥ 350 · 84 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/DSXn0nQDYme.jpg" data-ig="https://www.instagram.com/p/DSXn0nQDYme/" tabindex="0" role="button">
+        <img src="img/obras/DSXn0nQDYme-s.jpg" alt="Silhueta pedalando bicicleta ergométrica em azul" loading="lazy">
+        <figcaption><b>Pace × Red Bull</b><span class="work__k">coleção DT2</span><span class="work__y">Marcas · 2025</span><span class="work__l">♥ 334 · 46 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="autoral" data-full="img/obras/DCCMGyjP_Cm.jpg" data-ig="https://www.instagram.com/p/DCCMGyjP_Cm/" tabindex="0" role="button">
+        <img src="img/obras/DCCMGyjP_Cm-s.jpg" alt="Rapaz agachado com notebook no escuro" loading="lazy">
+        <figcaption><b>Peter</b><span class="work__k">projeto autoral · SP</span><span class="work__y">Autoral · 2024</span><span class="work__l">♥ 306 · 31 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/DP9asgHDSo2.jpg" data-ig="https://www.instagram.com/p/DP9asgHDSo2/" tabindex="0" role="button">
+        <img src="img/obras/DP9asgHDSo2-s.jpg" alt="Modelo de vestido longo branco na passarela" loading="lazy">
+        <figcaption><b>Forca Studio</b><span class="work__k">SPFW 60</span><span class="work__y">Moda · 2025</span><span class="work__l">♥ 302 · 44 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/C_eGhZ2PcnG.jpg" data-ig="https://www.instagram.com/p/C_eGhZ2PcnG/" tabindex="0" role="button">
+        <img src="img/obras/C_eGhZ2PcnG-s.jpg" alt="Modelo de bermuda camuflada numa rua do centro" loading="lazy">
+        <figcaption><b>How to Disappear</b><span class="work__k">editorial para HIST</span><span class="work__y">Moda · 2024</span><span class="work__l">♥ 290 · 36 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/C6zfXIuPVRX.jpg" data-ig="https://www.instagram.com/p/C6zfXIuPVRX/" tabindex="0" role="button">
+        <img src="img/obras/C6zfXIuPVRX-s.jpg" alt="Modelo de preto com meia arrastão e bolsa" loading="lazy">
+        <figcaption><b>adidas × HIST</b><span class="work__k">editorial</span><span class="work__y">Moda · 2024</span><span class="work__l">♥ 276 · 21 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/DPhWTa-j29i.jpg" data-ig="https://www.instagram.com/p/DPhWTa-j29i/" tabindex="0" role="button">
+        <img src="img/obras/DPhWTa-j29i-s.jpg" alt="Modelo de branco num cenário amarelo" loading="lazy">
+        <figcaption><b>Saves You</b><span class="work__k">Tijolo Wear & Tijolo Records</span><span class="work__y">Moda · 2025</span><span class="work__l">♥ 260 · 37 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/DO_OzAvAs1q.jpg" data-ig="https://www.instagram.com/p/DO_OzAvAs1q/" tabindex="0" role="button">
+        <img src="img/obras/DO_OzAvAs1q-s.jpg" alt="Mulher de terno branco e óculos escuros segurando bolsa" loading="lazy">
+        <figcaption><b>Fendi</b><span class="work__k">Milan Fashion Week</span><span class="work__y">Moda · 2025</span><span class="work__l">♥ 210 · 26 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/DDqD72UvrGR.jpg" data-ig="https://www.instagram.com/p/DDqD72UvrGR/" tabindex="0" role="button">
+        <img src="img/obras/DDqD72UvrGR-s.jpg" alt="Mão tocando a água num fundo azul claro" loading="lazy">
+        <figcaption><b>Essentia</b><span class="work__k">Clover Creative</span><span class="work__y">Marcas · 2024</span><span class="work__l">♥ 194 · 19 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="autoral" data-full="img/obras/DFtSiQNP6Ue.jpg" data-ig="https://www.instagram.com/p/DFtSiQNP6Ue/" tabindex="0" role="button">
+        <img src="img/obras/DFtSiQNP6Ue-s.jpg" alt="Torso masculino com colares de pérolas e cruz" loading="lazy">
+        <figcaption><b>Solar</b><span class="work__k">projeto autoral</span><span class="work__y">Autoral · 2025</span><span class="work__l">♥ 193 · 24 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/C-tgzS_vgxb.jpg" data-ig="https://www.instagram.com/p/C-tgzS_vgxb/" tabindex="0" role="button">
+        <img src="img/obras/C-tgzS_vgxb-s.jpg" alt="Rapaz de jaqueta FILA sentado numa pedra à beira-mar" loading="lazy">
+        <figcaption><b>FILA</b><span class="work__k">colaboração</span><span class="work__y">Marcas · 2024</span><span class="work__l">♥ 164 · 20 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="marcas" data-full="img/obras/DTIlzWnjb9c.jpg" data-ig="https://www.instagram.com/p/DTIlzWnjb9c/" tabindex="0" role="button">
+        <img src="img/obras/DTIlzWnjb9c-s.jpg" alt="Tênis Nike preto numa caixa aberta sobre o chão" loading="lazy">
+        <figcaption><b>Nike Sportswear</b><span class="work__k">still</span><span class="work__y">Marcas · 2026</span><span class="work__l">♥ 151 · 14 comentários</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="moda" data-full="img/obras/DPFWVFagv41.jpg" data-ig="https://www.instagram.com/p/DPFWVFagv41/" tabindex="0" role="button">
+        <img src="img/obras/DPFWVFagv41-s.jpg" alt="Homem de terno preto com crachá de segurança da Prada" loading="lazy">
+        <figcaption><b>Prada</b><span class="work__k">Milan Fashion Week</span><span class="work__y">Moda · 2025</span><span class="work__l">♥ 135 · 18 comentários</span></figcaption>
+      </figure>
+    </div>
+    <p class="obras__more"><a href="https://www.instagram.com/poeta_____visual/" target="_blank" rel="noopener">mais no instagram ↗</a></p>
+  </section>
+
+  <div class="lb" id="lb" hidden>
+    <button class="lb__x" type="button" aria-label="Fechar">fechar ×</button>
+    <img alt="">
+    <p class="lb__cap"></p>
+  </div>
 
   <!-- DUALIDADE -->
   <section class="dual" id="dualidade" data-hd="dark">
     <div class="dual__head">
-      <p class="eyebrow">ato i · a dualidade</p>
+      <p class="eyebrow">em destaque · castelos &amp; ruínas, bk' · 2026</p>
       <h2 class="h2">Todo castelo<br>guarda uma <em>ruína</em>.</h2>
       <p class="lead">O filme é construído em duas metades. O <strong>Castelo</strong> é o feminino: abrigo, proteção, a mãe que fala com o filho. A <strong>Ruína</strong> é a luta: os combatentes e os desafios do caminho. Arraste a linha.</p>
     </div>
@@ -101,7 +230,7 @@
   <!-- O FILME -->
   <section class="film" id="filme" data-hd="dark">
     <div class="film__head">
-      <p class="eyebrow">ato ii · o filme</p>
+      <p class="eyebrow">o filme · roteiro e direção com willy hajli</p>
       <h2 class="h2">Caminhos</h2>
       <p class="lead">Um ensaio visual sobre a faixa "Caminhos" que abriu as comemorações de 10 anos do álbum. Sem narrativa convencional: fragmentos, ancestralidade e cosmologia num retrato metafórico de Abebe Bikila.</p>
     </div>
@@ -142,7 +271,7 @@
 
   <!-- PRÊMIOS -->
   <section class="awards" id="premios" data-hd="light">
-    <p class="eyebrow">ato iii · os louros</p>
+    <p class="eyebrow">prêmios</p>
     <div class="awards__grid">
       <article class="laurel">
         <svg class="laurel__wreath" viewBox="0 0 200 200" aria-hidden="true"><use href="#wreath"/></svg>
@@ -188,147 +317,19 @@
     </svg>
   </section>
 
-  <!-- OBRAS -->
-  <section class="obras" id="obras" data-hd="dark">
-    <div class="obras__head">
-      <p class="eyebrow">ato iv · obras</p>
-      <h2 class="h2">Poesia,<br><em>independente da forma</em>.</h2>
-      <p class="lead">Semana de moda em Milão e São Paulo, capas de álbum, campanhas e projetos autorais. Toque numa foto pra ampliar.</p>
-      <div class="chips" role="group" aria-label="Filtrar obras">
-        <button type="button" class="chip on" data-f="all">Tudo <i>24</i></button>
-        <button type="button" class="chip" data-f="moda">Moda <i>8</i></button>
-        <button type="button" class="chip" data-f="musica">Música <i>6</i></button>
-        <button type="button" class="chip" data-f="marcas">Marcas <i>7</i></button>
-        <button type="button" class="chip" data-f="autoral">Autoral <i>3</i></button>
-      </div>
-    </div>
-    <a class="feature" href="#filme">
-      <video src="video/hero.mp4" poster="img/f45.jpg" muted loop playsinline data-lazy></video>
-      <span class="feature__tag">obra em destaque</span>
-      <span class="feature__t">Castelos &amp; Ruínas</span>
-      <span class="feature__k">filme · BK' · roteiro e direção com Willy Hajli · 2026</span>
-      <span class="feature__go">assistir ↑</span>
-    </a>
-    <div class="works" id="works">
-      <figure class="work" data-cat="moda" data-full="img/obras/DPFWVFagv41.jpg" data-ig="https://www.instagram.com/p/DPFWVFagv41/" tabindex="0" role="button">
-        <img src="img/obras/DPFWVFagv41-s.jpg" alt="Homem de terno preto com crachá de segurança da Prada" loading="lazy">
-        <figcaption><b>Prada</b><span class="work__k">Milan Fashion Week</span><span class="work__y">Moda · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/DO_OzAvAs1q.jpg" data-ig="https://www.instagram.com/p/DO_OzAvAs1q/" tabindex="0" role="button">
-        <img src="img/obras/DO_OzAvAs1q-s.jpg" alt="Mulher de terno branco e óculos escuros segurando bolsa" loading="lazy">
-        <figcaption><b>Fendi</b><span class="work__k">Milan Fashion Week</span><span class="work__y">Moda · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="musica" data-full="img/obras/DRua35ujbCL.jpg" data-ig="https://www.instagram.com/p/DRua35ujbCL/" tabindex="0" role="button">
-        <img src="img/obras/DRua35ujbCL-s.jpg" alt="Capa do álbum Japonês: cozinha com pessoas e um traço vermelho" loading="lazy">
-        <figcaption><b>Japonês</b><span class="work__k">capa e still · 30PRAUM</span><span class="work__y">Música · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/DP9asgHDSo2.jpg" data-ig="https://www.instagram.com/p/DP9asgHDSo2/" tabindex="0" role="button">
-        <img src="img/obras/DP9asgHDSo2-s.jpg" alt="Modelo de vestido longo branco na passarela" loading="lazy">
-        <figcaption><b>Forca Studio</b><span class="work__k">SPFW 60</span><span class="work__y">Moda · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="musica" data-full="img/obras/DRcjYvRjQPM.jpg" data-ig="https://www.instagram.com/p/DRcjYvRjQPM/" tabindex="0" role="button">
-        <img src="img/obras/DRcjYvRjQPM-s.jpg" alt="Retrato de Matuê no escuro, com tranças e colar" loading="lazy">
-        <figcaption><b>Matuê</b><span class="work__k">XTRANHO</span><span class="work__y">Música · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/DMyF983P7cw.jpg" data-ig="https://www.instagram.com/p/DMyF983P7cw/" tabindex="0" role="button">
-        <img src="img/obras/DMyF983P7cw-s.jpg" alt="Jogador com o uniforme vermelho da seleção de Angola" loading="lazy">
-        <figcaption><b>Seleção de Angola</b><span class="work__k">uniforme oficial de basquete · fast.desporto</span><span class="work__y">Marcas · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/DO81MPjjC3X.jpg" data-ig="https://www.instagram.com/p/DO81MPjjC3X/" tabindex="0" role="button">
-        <img src="img/obras/DO81MPjjC3X-s.jpg" alt="Três pessoas em jeans e couro em preto e branco" loading="lazy">
-        <figcaption><b>Diesel</b><span class="work__k">Milan Fashion Week</span><span class="work__y">Moda · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="musica" data-full="img/obras/DVwBZlxjYjV.jpg" data-ig="https://www.instagram.com/p/DVwBZlxjYjV/" tabindex="0" role="button">
-        <img src="img/obras/DVwBZlxjYjV-s.jpg" alt="Imagem em alto contraste preto e branco de dois rostos" loading="lazy">
-        <figcaption><b>Adulto Ideal Vol.2</b><span class="work__k">capa e still · Ryu the Runner & Emite Único</span><span class="work__y">Música · 2026</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/DMREESkv9zh.jpg" data-ig="https://www.instagram.com/p/DMREESkv9zh/" tabindex="0" role="button">
-        <img src="img/obras/DMREESkv9zh-s.jpg" alt="Dois boxeadores descansando num ginásio, em preto e branco" loading="lazy">
-        <figcaption><b>Luanda, Angola</b><span class="work__k">Unsharp Films para fast.desporto</span><span class="work__y">Marcas · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="musica" data-full="img/obras/DSLfsagj8F7.jpg" data-ig="https://www.instagram.com/p/DSLfsagj8F7/" tabindex="0" role="button">
-        <img src="img/obras/DSLfsagj8F7-s.jpg" alt="Homem sem camisa iluminado em azul, olhando para cima" loading="lazy">
-        <figcaption><b>XTRANHO pt.1</b><span class="work__k">Matuê</span><span class="work__y">Música · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/C_eGhZ2PcnG.jpg" data-ig="https://www.instagram.com/p/C_eGhZ2PcnG/" tabindex="0" role="button">
-        <img src="img/obras/C_eGhZ2PcnG-s.jpg" alt="Modelo de bermuda camuflada numa rua do centro" loading="lazy">
-        <figcaption><b>How to Disappear</b><span class="work__k">editorial para HIST</span><span class="work__y">Moda · 2024</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/DTIlzWnjb9c.jpg" data-ig="https://www.instagram.com/p/DTIlzWnjb9c/" tabindex="0" role="button">
-        <img src="img/obras/DTIlzWnjb9c-s.jpg" alt="Tênis Nike preto numa caixa aberta sobre o chão" loading="lazy">
-        <figcaption><b>Nike Sportswear</b><span class="work__k">still</span><span class="work__y">Marcas · 2026</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="musica" data-full="img/obras/DKS52h6vkRt.jpg" data-ig="https://www.instagram.com/p/DKS52h6vkRt/" tabindex="0" role="button">
-        <img src="img/obras/DKS52h6vkRt-s.jpg" alt="Figura com véu num campo escuro" loading="lazy">
-        <figcaption><b>IRADOH</b><span class="work__k">3 atos de irmandade · álbum</span><span class="work__y">Música · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/DSXn0nQDYme.jpg" data-ig="https://www.instagram.com/p/DSXn0nQDYme/" tabindex="0" role="button">
-        <img src="img/obras/DSXn0nQDYme-s.jpg" alt="Silhueta pedalando bicicleta ergométrica em azul" loading="lazy">
-        <figcaption><b>Pace × Red Bull</b><span class="work__k">coleção DT2</span><span class="work__y">Marcas · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/DUs9Jr4jXrH.jpg" data-ig="https://www.instagram.com/p/DUs9Jr4jXrH/" tabindex="0" role="button">
-        <img src="img/obras/DUs9Jr4jXrH-s.jpg" alt="Mulher de dourado andando num campo ao pôr do sol" loading="lazy">
-        <figcaption><b>Haleia</b><span class="work__k">campanha</span><span class="work__y">Marcas · 2026</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="musica" data-full="img/obras/DDe55LiOmR4.jpg" data-ig="https://www.instagram.com/p/DDe55LiOmR4/" tabindex="0" role="button">
-        <img src="img/obras/DDe55LiOmR4-s.jpg" alt="Cadeiras em círculo e uma pessoa deitada, em preto e branco" loading="lazy">
-        <figcaption><b>Convicto</b><span class="work__k">stills · Sant</span><span class="work__y">Música · 2024</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/DJaTpi5PG64.jpg" data-ig="https://www.instagram.com/p/DJaTpi5PG64/" tabindex="0" role="button">
-        <img src="img/obras/DJaTpi5PG64-s.jpg" alt="Modelo de saia laranja atravessando a rua à noite" loading="lazy">
-        <figcaption><b>TOPO</b><span class="work__k">coleção Ateliê</span><span class="work__y">Moda · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/C6zfXIuPVRX.jpg" data-ig="https://www.instagram.com/p/C6zfXIuPVRX/" tabindex="0" role="button">
-        <img src="img/obras/C6zfXIuPVRX-s.jpg" alt="Modelo de preto com meia arrastão e bolsa" loading="lazy">
-        <figcaption><b>adidas × HIST</b><span class="work__k">editorial</span><span class="work__y">Moda · 2024</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="moda" data-full="img/obras/DPhWTa-j29i.jpg" data-ig="https://www.instagram.com/p/DPhWTa-j29i/" tabindex="0" role="button">
-        <img src="img/obras/DPhWTa-j29i-s.jpg" alt="Modelo de branco num cenário amarelo" loading="lazy">
-        <figcaption><b>Saves You</b><span class="work__k">Tijolo Wear & Tijolo Records</span><span class="work__y">Moda · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/C-tgzS_vgxb.jpg" data-ig="https://www.instagram.com/p/C-tgzS_vgxb/" tabindex="0" role="button">
-        <img src="img/obras/C-tgzS_vgxb-s.jpg" alt="Rapaz de jaqueta FILA sentado numa pedra à beira-mar" loading="lazy">
-        <figcaption><b>FILA</b><span class="work__k">colaboração</span><span class="work__y">Marcas · 2024</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="marcas" data-full="img/obras/DDqD72UvrGR.jpg" data-ig="https://www.instagram.com/p/DDqD72UvrGR/" tabindex="0" role="button">
-        <img src="img/obras/DDqD72UvrGR-s.jpg" alt="Mão tocando a água num fundo azul claro" loading="lazy">
-        <figcaption><b>Essentia</b><span class="work__k">Clover Creative</span><span class="work__y">Marcas · 2024</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="autoral" data-full="img/obras/DFtSiQNP6Ue.jpg" data-ig="https://www.instagram.com/p/DFtSiQNP6Ue/" tabindex="0" role="button">
-        <img src="img/obras/DFtSiQNP6Ue-s.jpg" alt="Torso masculino com colares de pérolas e cruz" loading="lazy">
-        <figcaption><b>Solar</b><span class="work__k">projeto autoral</span><span class="work__y">Autoral · 2025</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="autoral" data-full="img/obras/DCCMGyjP_Cm.jpg" data-ig="https://www.instagram.com/p/DCCMGyjP_Cm/" tabindex="0" role="button">
-        <img src="img/obras/DCCMGyjP_Cm-s.jpg" alt="Rapaz agachado com notebook no escuro" loading="lazy">
-        <figcaption><b>Peter</b><span class="work__k">projeto autoral · SP</span><span class="work__y">Autoral · 2024</span></figcaption>
-      </figure>
-      <figure class="work" data-cat="autoral" data-full="img/obras/DMq9X_4sGFc.jpg" data-ig="https://www.instagram.com/p/DMq9X_4sGFc/" tabindex="0" role="button">
-        <img src="img/obras/DMq9X_4sGFc-s.jpg" alt="Duas mulheres de véu numa rua de Luanda" loading="lazy">
-        <figcaption><b>Centro de Luanda</b><span class="work__k">Angola · África</span><span class="work__y">Autoral · 2025</span></figcaption>
-      </figure>
-    </div>
-    <p class="obras__more"><a href="https://www.instagram.com/poeta_____visual/" target="_blank" rel="noopener">mais no instagram ↗</a></p>
-  </section>
-
-  <div class="lb" id="lb" hidden>
-    <button class="lb__x" type="button" aria-label="Fechar">fechar ×</button>
-    <img alt="">
-    <p class="lb__cap"></p>
-  </div>
-
   <!-- QUEM FILMA -->
   <section class="poeta" id="poeta" data-hd="dark">
     <div class="poeta__eye">
-      <video src="video/olhar.mp4" poster="img/f56.jpg" muted loop playsinline data-lazy></video>
+      <img src="img/poeta.jpg" alt="O Poeta Visual sorrindo à noite na rua, com uma câmera com flash na mão">
       <div class="grain"></div>
       <p class="poeta__name" aria-hidden="true"><span>O Poeta</span><span>Visual</span></p>
     </div>
     <div class="poeta__txt">
-      <p class="eyebrow">ato v · quem filma</p>
+      <p class="eyebrow">sobre</p>
       <h2 class="h2">Arthur Lopes,<br><em>23 anos</em></h2>
       <p class="lead">De Mogi das Cruzes, veio do polo aquático. Na pandemia começou a fotografar de um jeito livre e intuitivo: primeiro shows, depois moda e editorial. Hoje, aos 23, estuda Fotografia na Belas Artes de São Paulo e transita entre fotografia, moda, rap e audiovisual, com referências na cultura urbana, na ancestralidade e na juventude negra brasileira.</p>
       <figure class="poeta__set">
-        <img src="img/set.jpg" alt="Arthur Lopes no set, de headset, ao lado do câmera" loading="lazy">
+        <img src="img/fotografia-sonora.jpg" alt="O Poeta Visual diante de uma parede escrita &quot;Poeta Visual apresenta Fotografia Sonora&quot;" loading="lazy">
       </figure>
       <blockquote class="quote quote--sm">
         <p>"Eu sou um poeta visual. Eu faço poesia, independente da forma."</p>
@@ -349,7 +350,7 @@
 
   <!-- CONTATO -->
   <section class="contact" id="contato" data-hd="light">
-    <p class="eyebrow">fim · próximo filme</p>
+    <p class="eyebrow">contato</p>
     <h2 class="contact__big">Qual é a <em>sua</em> história?</h2>
     <form class="slate" id="slate">
       <div class="slate__top" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
@@ -379,10 +380,10 @@
 </main>
 
 <footer class="ft" data-hd="dark">
-  <p class="ft__card"><span>Castelos</span> <i>&amp;</i> <span>Ruínas</span></p>
+  <p class="ft__card"><span>Poeta</span> <i>·</i> <span>Visual</span></p>
   <p class="ft__small">O Poeta Visual · São Paulo · 2026</p>
 </footer>
 
-<script src="main.js?v=5"></script>
+<script src="main.js?v=9"></script>
 </body>
 </html>
