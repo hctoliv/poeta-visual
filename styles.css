@@ -139,7 +139,7 @@ html.intro-on .intro{display:grid}
 .laurel__wreath{width:min(100%,380px);margin:0 auto;color:#8a6a2c;display:block}
 .laurel__wreath .lv path{stroke-dasharray:60;stroke-dashoffset:60;transition:stroke-dashoffset 1.4s ease}
 .laurel.in .lv path{stroke-dashoffset:0}
-.laurel__in{position:absolute;top:0;left:0;right:0;aspect-ratio:1;max-width:380px;margin:0 auto;display:grid;place-content:center;padding:0 22%}
+.laurel__in{position:absolute;top:0;left:0;right:0;aspect-ratio:1;width:min(100%,380px);margin:0 auto;display:grid;place-content:center;padding:22% 22% 0}
 .laurel__k{font:500 11px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:#8a6a2c;margin-bottom:12px}
 .laurel h3{font:500 clamp(26px,2.6vw,40px)/1 var(--serif);margin:0 0 10px}
 .laurel__in p{margin:0;font:400 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#5b554c}
@@ -266,7 +266,8 @@ html.intro-on .intro{display:grid}
   .credits__list div{grid-template-columns:110px minmax(0,1fr)}
   .stills{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stills figure:nth-child(even){margin-top:30px}
-  .awards__grid{grid-template-columns:minmax(0,1fr);gap:70px}
+  .awards__grid{grid-template-columns:minmax(0,1fr);gap:56px}
+  .laurel__wreath,.laurel__in{width:min(100%,300px)}
   .works{columns:2}
   .top__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
   .top__item:first-child{grid-row:auto;grid-column:1/-1}
